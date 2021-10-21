@@ -1,8 +1,8 @@
-.section.about-company {
+.about-company {
   padding-top: 0;
 }
 
-.about-company-title {
+.about-company__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -10,11 +10,11 @@
   margin-bottom: 50px;
 }
 
-.about-list {
+.about-company__list {
   display: flex;
 }
 
-.about-item {
+.about-company__item {
   list-style: none;
   display: flex;
   position: relative;
@@ -23,7 +23,7 @@
   }
 }
 
-.about-text {
+.about-company__text {
   display: flex;
   position: absolute;
   width: 100%;

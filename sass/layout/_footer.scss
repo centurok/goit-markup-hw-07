@@ -5,7 +5,7 @@
   background-color: var(--bgd-very-dark-grayish-blue);
 }
 
-.footer-section {
+.footer-container {
   display: flex;
   align-items: baseline;
   & .logo {
@@ -14,7 +14,7 @@
   }
 }
 
-.ftr-left {
+.footer-nav {
   margin-right: 70px;
   align-items: baseline;
 }
@@ -28,21 +28,21 @@
   }
 }
 
-.ftr-logo {
+.footer-nav__logo {
   font-family: 'Raleway', sans-serif;
   color: var(--txt-blue);
   font-size: 26px;
   line-height: 1.19;
 }
 
-.ftr-second-logo {
+.footer-nav__logo__second {
   font-family: 'Raleway', sans-serif;
   color: var(--txt-white);
   font-size: 26px;
   line-height: 31px;
 }
 
-.ftr-address {
+.footer-nav__address {
   display: flex;
   font-size: 14px;
   line-height: 1.71;
@@ -56,12 +56,12 @@
   }
 }
 
-.ftr-contacts {
-  list-style: none;
-}
-
-.ftr-link {
+.footer-nav__link {
   padding: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
@@ -71,15 +71,15 @@
   }
 }
 
-.contact-ftr:not(:last-child) {
+.footer-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.ftr-enjoy {
+.join {
   margin-right: auto;
 }
 
-.enjoy-title {
+.join__title {
   font-weight: bold;
   color: var(--txt-white);
   line-height: 1.14;
@@ -90,19 +90,18 @@
   display: flex;
 }
 
-.enjoy-list-icon {
+.join-list {
   display: flex;
 }
 
-.enjoy-icon-item {
-  list-style: none;
+.join-list__item {
   display: block;
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
 
-.enjoy-icon-link {
+.join-list__link {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -119,11 +118,11 @@
   }
 }
 
-.ftr-icon {
+.join-list__icon {
   fill: var(--txt-white);
 }
 
-.title-subscribe {
+.subscribe__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -133,11 +132,11 @@
   margin-bottom: 20px;
 }
 
-.subscribe-box {
+.subscribe__box {
   display: flex;
 }
 
-.form-subscribe {
+.subscribe__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -160,7 +159,7 @@
   }
 }
 
-.subscribe-button {
+.subscribe__button {
   display: flex;
   align-items: center;
   text-align: center;
@@ -186,7 +185,7 @@
   }
 }
 
-.icon-send {
+.subscribe__icon {
   fill: var(--txt-white);
   margin-left: 12px;
 }

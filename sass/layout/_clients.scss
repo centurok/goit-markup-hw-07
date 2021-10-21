@@ -1,4 +1,4 @@
-.clients-title {
+.clients__title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -7,24 +7,22 @@
   margin-bottom: 50px;
 }
 
-.client-list {
+.clients__list {
   display: flex;
   justify-content: center;
 }
 
-.client-item {
-  list-style: none;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+.clients__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.client-link {
+.clients__link {
   display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid var(--clr-icon);
   border-radius: 4px;
+  outline: none;
   align-items: center;
   justify-content: center;
   fill: var(--clr-icon);
@@ -37,7 +35,7 @@
   }
 }
 
-.client-icon {
+.clients__icon {
   width: 106px;
   height: 60px;
 }

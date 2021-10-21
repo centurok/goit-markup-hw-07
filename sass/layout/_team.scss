@@ -2,7 +2,7 @@
   background-color: var(--bgd-light-grayish-blue);
 }
 
-.title-team {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -14,7 +14,7 @@
   display: flex;
 }
 
-.team-member {
+.team-list__item {
   list-style: none;
   .team-list > & {
     flex-basis: auto;
@@ -24,13 +24,13 @@
   }
 }
 
-.list-icon {
+.icon-list {
   display: flex;
   list-style: none;
   justify-content: center;
 }
 
-.icon-item {
+.icon-list__item {
   display: inline-flex;
   align-items: center;
   &:not(:last-child) {
@@ -38,13 +38,14 @@
   }
 }
 
-.icon-link {
+.icon-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  outline: none;
   fill: var(--clr-icon);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,7 +56,7 @@
   }
 }
 
-.team-title {
+.member-sign {
   padding: 30px 32px;
   background-color: var(--bgd-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -63,7 +64,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.title-member {
+.member-sign__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -71,7 +72,7 @@
   margin-bottom: 10px;
 }
 
-.about-member {
+.member-sign__about {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
